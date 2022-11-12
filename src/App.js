@@ -62,6 +62,9 @@ function App() {
           />
         )}
       </div>
+      <div className="footer">
+        Created with ❤️ by <a href="https://github.com/rahulps1000">Rahul</a>
+      </div>
     </div>
   );
 }
