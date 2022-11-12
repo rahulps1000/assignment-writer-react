@@ -18,36 +18,38 @@
     border: 2px solid #006fb5;
 }
 
-.btn-slide:hover {
-    background-color: #0099cc;
-}
-
-.btn-slide2:hover {
-    background-color: #006fb5;
-}
-
-.btn-slide:hover span.circle,
-.btn-slide2:hover span.circle2 {
-    left: 100%;
-    margin-left: -45px;
-    background-color: #fdfdfd;
-    color: #0099cc;
-}
-
-.btn-slide2:hover span.circle2 {
-    color: #006fb5;
-}
-
-.btn-slide:hover span.title,
-.btn-slide2:hover span.title2 {
-    left: 40px;
-    opacity: 0;
-}
-
-.btn-slide:hover span.title-hover,
-.btn-slide2:hover span.title-hover2 {
-    opacity: 1;
-    left: 40px;
+@media screen and (min-width: 620px){
+    .btn-slide:hover {
+            background-color: #0099cc;
+        }
+    
+        .btn-slide2:hover {
+            background-color: #006fb5;
+        }
+    
+        .btn-slide:hover span.circle,
+        .btn-slide2:hover span.circle2 {
+            left: 100%;
+            margin-left: -45px;
+            background-color: #fdfdfd;
+            color: #0099cc;
+        }
+    
+        .btn-slide2:hover span.circle2 {
+            color: #006fb5;
+        }
+    
+        .btn-slide:hover span.title,
+        .btn-slide2:hover span.title2 {
+            left: 40px;
+            opacity: 0;
+        }
+    
+        .btn-slide:hover span.title-hover,
+        .btn-slide2:hover span.title-hover2 {
+            opacity: 1;
+            left: 40px;
+        }
 }
 
 .btn-slide span.circle,
