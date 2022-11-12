@@ -1,0 +1,69 @@
+.page-selector {
+    display: grid;
+    grid-area: page;
+    grid-template-columns: repeat(auto-fill, 150px);
+    grid-gap: 10px;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 10px;
+}
+
+.page-selector::after {
+    content: "";
+    flex: auto;
+}
+
+.page-selector .dragndrop {
+    height: 80%;
+    width: 100%;
+    border: 3px dashed currentColor;
+    margin-top: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    min-height: 211px;
+    border-radius: 5px;
+    color: white;
+}
+
+.bigp,
+.smallp {
+    color: #dddddd;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.smallp .page-selector {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.smallp .dragndrop {
+    min-width: 150px;
+    width: 150px;
+}
+
+/* width */
+.page-selector::-webkit-scrollbar {
+    height: 10px;
+}
+
+/* Track */
+.page-selector::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+/* Handle */
+.page-selector::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.page-selector::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

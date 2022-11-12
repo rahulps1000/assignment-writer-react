@@ -1,0 +1,84 @@
+{
+    "pages": [
+        {
+            "name": "A4",
+            "file": "a4.jpg",
+            "top": 32,
+            "left": 75,
+            "right": 68
+        }, {
+            "name": "NotePad",
+            "file": "notepad.jpg",
+            "top": 80,
+            "left": 55,
+            "right": 60
+        }, {
+            "name": "Note Book",
+            "file": "rough.jpg",
+            "top": 65,
+            "left": 73,
+            "right": 6
+        }, {
+            "name": "Spiral V1",
+            "file": "spiral.jpg",
+            "top": 50,
+            "left": 110,
+            "right": 84
+        }, {
+            "name": "Spiral V2",
+            "file": "white.jpg",
+            "top": 50,
+            "left": 115,
+            "right": 123
+        }, {
+            "name": "Spiral V3",
+            "file": "note.jpg",
+            "top": 81,
+            "left": 61,
+            "right": 51
+        }
+    ],
+    "fonts": [
+        {
+            "name": "Brown Bag Lunch",
+            "file": "BrownBagLunch.ttf",
+            "size": 21,
+            "height": 16
+        }, {
+            "name": "Caveat",
+            "file": "caveat.ttf",
+            "size": 20,
+            "height": 18
+        }, {
+            "name": "Homemade Apple",
+            "file": "HomemadeApple.ttf",
+            "size": 14,
+            "height": 19
+        }, {
+            "name": "Jott FLF",
+            "file": "JottFLF.ttf",
+            "size": 19,
+            "height": 18
+        }, {
+            "name": "KB First Grade Grown",
+            "file": "kbfirstgradegrown.ttf",
+            "size": 13,
+            "height": 20
+        }, {
+            "name": "Liu Jian Mao Cao",
+            "file": "LiuJianMaoCao.ttf",
+            "size": 13,
+            "height": 19.5
+        }, {
+            "name": "Please write me a song",
+            "file": "pleasewritemeasong.ttf",
+            "size": 13,
+            "height": 19.5
+        }, {
+            "name": "Simplicity",
+            "file": "simplicity.ttf",
+            "size": 13,
+            "height": 19.5
+        }
+    ]
+}

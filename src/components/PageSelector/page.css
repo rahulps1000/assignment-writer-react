@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+.Page {
+    flex-direction: column;
+    display: flex;
+    width: 150px;
+    height: 250px;
+    margin: 7px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    font-family: 'Poor Story', cursive;
+    font-size: 22px;
+}
+
+.Page:hover {
+    background-color: #ffffff52;
+    padding: 7px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.Page.selected {
+    background-color: #006fb5;
+    padding: 7px;
+    padding-bottom: 5px;
+}
+
+.Page img {
+    height: 250px;
+    width: auto;
+    object-fit: cover;
+    object-position: left;
+    border-radius: 5px;
+    padding-bottom: 2px;
+}

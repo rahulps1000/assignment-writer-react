@@ -1,0 +1,70 @@
+.font-selector {
+    display: grid;
+    grid-area: page;
+    grid-template-columns: repeat(auto-fill, 150px);
+    grid-gap: 10px;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 10px;
+    align-items: center;
+}
+
+.font-selector::after {
+    content: "";
+    flex: auto;
+}
+
+.font-selector .dragndrop {
+    width: 100%;
+    border: 3px dashed currentColor;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    height: 80px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+.bigf,
+.smallf {
+    color: #dddddd;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.smallf .font-selector {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.smallf .dragndrop {
+    min-width: 150px;
+    font-size: 16px;
+    margin-top: 0;
+}
+
+/* width */
+.font-selector::-webkit-scrollbar {
+    height: 10px;
+}
+
+/* Track */
+.font-selector::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+/* Handle */
+.font-selector::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.font-selector::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
