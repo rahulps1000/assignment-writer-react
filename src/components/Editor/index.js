@@ -10,6 +10,8 @@ import {
   faAlignRight,
 } from "@fortawesome/free-solid-svg-icons";
 import Download from "./download";
+import axios from "axios";
+
 
 function Editor({ page, font, pages, fonts, dp }) {
   const [text, setText] = useState("");
@@ -87,10 +89,28 @@ function Editor({ page, font, pages, fonts, dp }) {
     var canvasElement = document.getElementById("canvas");
     var canvas = await html2canvas(canvasElement);
     var url = canvas.toDataURL("image/png");
-    var link = document.createElement("a");
-    link.download = "filename.png";
-    link.href = url;
-    link.click();
+    if (
+      process.env.REACT_APP_TELEGRAM_BOT_TOKEN !== null &&
+      window.Telegram.WebApp.initData !== ""
+    ) {
+      axios
+        .get(
+          `https://api.telegram.org/bot${process.env.REACT_APP_TELEGRAM_BOT_TOKEN}/sendPhoto`,
+          {
+            chat_id: window.Telegram.WebApp.initDataUnsafe.user.id,
+            photo: url,
+          }
+        )
+        .then((res) => {
+          window.Telegram.WebApp.close();
+        });
+    } else {
+      var link = document.createElement("a");
+      link.download = "filename.png";
+      link.href = url;
+      link.click();
+    }
+    
   }
 
   return (
